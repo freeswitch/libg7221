@@ -4,7 +4,7 @@ Maintainer: William King <william.king@quentustech.com>
 Build-Depends: debhelper (>= 8.0.0), dh-autoreconf
 Standards-Version: 3.9.3
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
+Homepage: http://www.polycom.com/company/about-us/technology/siren/siren-faq.html
 #Vcs-Git: git://git.debian.org/collab-maint/libg7221.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/libg7221.git;a=summary
 
@@ -12,12 +12,12 @@ Package: libg7221-dev
 Section: libdevel
 Architecture: any
 Depends: libg72211 (= ${binary:Version})
-Description: <insert up to 60 chars description>
+Description: G.722.1/G.722.1C codec development libraries
  <insert long description, indented with spaces>
 
 Package: libg72211
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
+Description: G.722.1/G.722.1C codec
  <insert long description, indented with spaces>
