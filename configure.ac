@@ -27,8 +27,8 @@ m4_include(config/ax_misaligned_access_fails.m4)
 m4_include(config/ax_c99_features.m4)
 
 G722_1_MAJOR_VERSION=0
-G722_1_MINOR_VERSION=0
-G722_1_MICRO_VERSION=1
+G722_1_MINOR_VERSION=2
+G722_1_MICRO_VERSION=0
 
 G722_1_LT_CURRENT=0
 G722_1_LT_REVISION=2
