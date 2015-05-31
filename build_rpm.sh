@@ -9,6 +9,7 @@ fi
 ORIGDIR=`pwd`
 
 ./autogen.sh
+./configure
 
 cd ..
 
