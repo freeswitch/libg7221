@@ -1,7 +1,7 @@
 #/bin/bash
 ORIGDIR=`pwd`
 
-./configure
+./autogen.sh
 
 cd ..
 

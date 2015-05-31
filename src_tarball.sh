@@ -4,8 +4,6 @@ TMPDIR=g722_1.$$
 
 mkdir -p ../${TMPDIR}
 
-./autogen.sh
-
 cd ..
 cp -a libg7221 ${TMPDIR}/g722_1-0.2.0
 cd ${TMPDIR}

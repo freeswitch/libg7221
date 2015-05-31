@@ -30,6 +30,7 @@ libg722_1 development files.
 %setup -q
 
 %build
+./autogen.sh
 %configure --enable-doc --disable-static --disable-rpath
 make
 
