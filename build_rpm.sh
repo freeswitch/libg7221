@@ -1,6 +1,14 @@
 #/bin/bash
+BUILDMODE=$1 # ALL or SRPM
+RPMBUILDMODE="-ba" # "-ba" for ALL, "-bs" for SRPM
+
+if [ "$BUILDMODE" == "SRPM" ]; then
+    RPMBUILDMODE="-bs"
+fi
+
 ORIGDIR=`pwd`
 
+./autogen.sh
 ./configure
 
 cd ..
@@ -13,4 +21,4 @@ cp ${ORIGDIR}/*.gz rpmbuild/SOURCES/.
 rpmbuild --define "_topdir %(pwd)/rpmbuild" \
   --define "_rpmdir %{_topdir}" \
   --define "_srcrpmdir %{_topdir}" \
-  -ba rpmbuild/SPECS/g722_1.spec
+  $RPMBUILDMODE rpmbuild/SPECS/g722_1.spec

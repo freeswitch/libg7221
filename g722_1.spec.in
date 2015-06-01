@@ -1,7 +1,7 @@
 Summary:    libg722_1 is a library for the ITU G.722.1 and Annex C wideband speech codecs.
 Name:       @PACKAGE@
 Version:    @VERSION@
-Release:    1
+Release:    1%{?dist}
 License:    Polycom
 Group:      System Environment/Libraries
 URL:        http://www.soft-switch.org/libg722_1
@@ -30,6 +30,7 @@ libg722_1 development files.
 %setup -q
 
 %build
+./autogen.sh
 %configure --enable-doc --disable-static --disable-rpath
 make
 
