@@ -12,7 +12,7 @@ BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Docdir:     %{_prefix}/doc
 
 BuildRequires: audiofile-devel
-BuildRequires: doxygen
+BuildRequires: doxygen libtool
 
 %description
 libg722_1 is a library for the ITU G.722.1 and Annex C wideband speech codecs.
@@ -21,7 +21,6 @@ libg722_1 is a library for the ITU G.722.1 and Annex C wideband speech codecs.
 Summary:    G.722.1 development files
 Group:      Development/Libraries
 Requires:   %{name} = %{version}
-PreReq:     /sbin/install-info
 
 %description devel
 libg722_1 development files.
