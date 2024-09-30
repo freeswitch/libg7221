@@ -3,7 +3,7 @@ exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@includedir@
 
-Name: spandsp
+Name: g722_1
 Description: A library for the ITU G.722.1 and G.722.1C audio codecs.
 Requires:
 Version: @VERSION@

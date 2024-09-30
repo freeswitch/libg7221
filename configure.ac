@@ -204,7 +204,9 @@ if test "${build}" = "${host}"
 then
     case "${host}" in
     x86_64-*)
-        AX_CHECK_REAL_FILE([${prefix}/lib64], libdir='$(exec_prefix)/lib64')
+        if test ! -f "/etc/debian_version"; then
+            AX_CHECK_REAL_FILE([${prefix}/lib64], libdir='$(exec_prefix)/lib64')
+        fi
         ;;
     esac
 fi
